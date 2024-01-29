@@ -1,0 +1,61 @@
+$primary-color: hsl(259, 100%, 65%);
+$error-color:hsl(0, 100%, 67%);
+$light-gray:hsl(0, 0%, 86%);
+$dark-gray:hsl(0, 1%, 44%);
+$black:hsl(0, 0%, 8%);
+$base-font:32px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+padding: 1rem;
+margin: 0;
+box-sizing: border-box;
+overflow: hidden;
+font-family: 'Poppins';
+font-size: $base-font;
+height: 100vh;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-gray;
+}
+.wrapper{
+background-color: white;
+border-radius: 1rem;
+border-bottom-right-radius: 5rem;
+padding: 1.5rem;
+max-width: 390px;
+}
+form{
+    display: flex;
+    label{
+        font-size: .75rem;
+        color: $dark-gray;
+        font-weight: 700;
+    }
+    input{
+        max-width: 80%;
+        border-radius: .3rem;
+        border: 1px solid $light-gray;
+        padding: .7rem 0 .7rem 1rem;
+        &::placeholder{
+            color: $black;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    }
+}
+p{
+    color: $base-font;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 800;
+    span{
+        color: $primary-color;
+        
+    }
+}

@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  padding: 1rem;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Poppins";
+  font-size: 32px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 1rem;
+  border-bottom-right-radius: 5rem;
+  padding: 1.5rem;
+  max-width: 390px;
+}
+
+form {
+  display: flex;
+}
+form label {
+  font-size: 0.75rem;
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+}
+form input {
+  max-width: 80%;
+  border-radius: 0.3rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 0.7rem 0 0.7rem 1rem;
+}
+form input::-moz-placeholder {
+  color: hsl(0, 0%, 8%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+form input::placeholder {
+  color: hsl(0, 0%, 8%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+p {
+  color: 32px;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 800;
+}
+p span {
+  color: hsl(259, 100%, 65%);
+}/*# sourceMappingURL=style.css.map */
