@@ -40,11 +40,18 @@ max-width: 390px;
     align-items: center;
 } */
 form{
-    display: flex;
+    .inputs{
+        display: flex;
+    }
     label{
         font-size: .75rem;
         color: $dark-gray;
         font-weight: 700;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
     input{
         max-width: 80%;
@@ -80,11 +87,12 @@ p{
 .divider_container{
     display: flex;
     align-items: center;
-    padding: .75rem 0;
+    padding: 2rem 0;
+    position: relative;
     .line{
         height: 1px;
         background-color: $light-gray;
-        width: 90%;
+        width: 100%;
     }
     .divider{
         background: $primary-color;
@@ -94,6 +102,9 @@ p{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+    right: 0;
+    
         &:hover{
             background-color: black;
             cursor: pointer;
@@ -103,13 +114,16 @@ p{
         }
     }
 }
-.input-container{
-    p{
-        font-size: 9px;
+small{
+    font-size: 9px;
         color: $error-color;
         font-style: normal;
         font-weight: 400;
         padding-top: .2rem;
-        display: none;
+        /* display: none; */
+}
+@media screen and (max-width:475px) {
+    .divider{
+        left: 40%;
     }
 }
