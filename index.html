@@ -27,45 +27,36 @@
             Day
           
            </label>
-           <input type="text" placeholder="0" id="day">
+           <input type="text" id="day">
+           <p>this field is required</p>
         </div>
         <div class="input-container">
           <label for="month">
             Month
           </label>
-           <input type="text" placeholder="0" id="month">
+           <input type="text" id="month">
+           <p>this field is required</p>
         </div>
         <div class="input-container">
           <label for="year">
             Year
           </label>
-           <input type="text" placeholder="0000" id="year">
+           <input type="text" id="year">
+           <p>this field is required</p>
         </div>
+        <button type="submit" style="display: none;">Submit</button>
       </form>
-      <div class="divider"></div>
-    <img src="./assets/images/icon-arrow.svg" alt="">
-      <p><span class="current_year">10</span> Years</p>
-      <p><span class="current_months">10</span> Months</p>
-      <p><span class="current_days">10</span> Days</p>
+      <div class="divider_container">
+        <div class="line"></div>
+      <div class="divider"><img src="./assets/images/icon-arrow.svg" alt=""></div>
+      </div>
+  
+      <p><span class="current_year">--</span> Years</p>
+      <p><span class="current_months">--</span> Months</p>
+      <p><span class="current_days">----</span> Days</p>
     </div>
   </article>
 </main>
- <!--  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-   -->
- <!--  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+<script src="./app.js"></script>
 </body>
 </html>

@@ -27,6 +27,15 @@ body {
   max-width: 390px;
 }
 
+/* .img-circle{
+    background: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 form {
   display: flex;
 }
@@ -40,16 +49,17 @@ form input {
   border-radius: 0.3rem;
   border: 1px solid hsl(0, 0%, 86%);
   padding: 0.7rem 0 0.7rem 1rem;
-}
-form input::-moz-placeholder {
+  caret-color: hsl(259, 100%, 65%);
   color: hsl(0, 0%, 8%);
   font-size: 1rem;
   font-weight: 700;
 }
-form input::placeholder {
-  color: hsl(0, 0%, 8%);
-  font-size: 1rem;
-  font-weight: 700;
+form input:focus {
+  outline: hsl(259, 100%, 65%);
+  border-color: hsl(259, 100%, 65%);
+}
+form input:hover {
+  cursor: pointer;
 }
 
 p {
@@ -60,4 +70,40 @@ p {
 }
 p span {
   color: hsl(259, 100%, 65%);
+}
+
+.divider_container {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+.divider_container .line {
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+  width: 90%;
+}
+.divider_container .divider {
+  background: hsl(259, 100%, 65%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider_container .divider:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.divider_container .divider img {
+  width: 50%;
+}
+
+.input-container p {
+  font-size: 9px;
+  color: hsl(0, 100%, 67%);
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 0.2rem;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

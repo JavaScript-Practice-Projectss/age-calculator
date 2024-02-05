@@ -30,6 +30,15 @@ border-bottom-right-radius: 5rem;
 padding: 1.5rem;
 max-width: 390px;
 }
+/* .img-circle{
+    background: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 form{
     display: flex;
     label{
@@ -42,11 +51,19 @@ form{
         border-radius: .3rem;
         border: 1px solid $light-gray;
         padding: .7rem 0 .7rem 1rem;
-        &::placeholder{
+        caret-color: $primary-color;
+     
             color: $black;
             font-size: 1rem;
             font-weight: 700;
+        
+        &:focus{
+            outline:$primary-color;
+            border-color: $primary-color;
         }
+    &:hover{
+        cursor: pointer;
+    }
     }
 }
 p{
@@ -57,5 +74,42 @@ p{
     span{
         color: $primary-color;
         
+    }
+}
+
+.divider_container{
+    display: flex;
+    align-items: center;
+    padding: .75rem 0;
+    .line{
+        height: 1px;
+        background-color: $light-gray;
+        width: 90%;
+    }
+    .divider{
+        background: $primary-color;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: black;
+            cursor: pointer;
+        }
+        img{
+            width: 50%;
+        }
+    }
+}
+.input-container{
+    p{
+        font-size: 9px;
+        color: $error-color;
+        font-style: normal;
+        font-weight: 400;
+        padding-top: .2rem;
+        display: none;
     }
 }
