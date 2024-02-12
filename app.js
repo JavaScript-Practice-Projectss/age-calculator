@@ -16,20 +16,24 @@ const yearBox = document.querySelector('.current_year');
             i.style.borderColor = 'red';
             parent.querySelector('small').innerText = 'This field is required';
             validator= false
+            
            }else if(year.value>currentDate.getFullYear()){
             i.style.borderColor = 'red';
             parent.querySelector('small').innerText = 'Please enter a valid year';
             validator= false
+            
            }
            else if(month.value>12){
             i.style.borderColor = 'red';
             parent.querySelector('small').innerText = 'Please enter a valid month';
             validator= false
+            
            }
            else if(day.value>31){
             i.style.borderColor = 'red';
             parent.querySelector('small').innerText = 'Please enter a valid Date';
             validator= false
+            
            }
            else{
             i.style.borderColor = 'black';

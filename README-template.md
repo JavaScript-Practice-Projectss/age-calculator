@@ -1,26 +1,25 @@
-# Frontend Mentor - Age calculator app solution
+# Frontend Mentor - Age Calculator App Solution
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This repository contains a solution to the [Age Calculator App challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges aim to improve coding skills by building realistic projects.
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [The Challenge](#the-challenge)
+  - [Preview](#preview)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [JavaScript Code](#javascript-code)
+  - [File Structure](#file-structure)
+  - [Functions](#functions)
+  - [Constants](#constants)
+- [CSS Styling](#css-styling)
+  - [Variables](#variables)
+  - [Selectors](#selectors)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-### The challenge
+### The Challenge
 
 Users should be able to:
 
@@ -30,90 +29,55 @@ Users should be able to:
   - The day number is not between 1-31
   - The month number is not between 1-12
   - The year is in the future
-  - The date is invalid e.g. 31/04/1991 (there are 30 days in April)
+  - The date is invalid, e.g., 31/04/1991 (there are 30 days in April)
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
-### Screenshot
+### Preview
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Solution Preview](./assets/images/127.0.0.1_5500_%20(1).png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## My process
+## JavaScript Code
 
-### Built with
+### File Structure
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+The JavaScript code is contained in the `app.js` file. It is responsible for handling form submissions, validating input, and calculating the user's age based on the provided date.
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### Functions
 
-### What I learned
+- `validateInput(input)`: Validates individual input fields.
+- `validate()`: Validates all input fields and returns a boolean indicating whether the form is valid.
+- `calculateAge()`: Calculates the user's age based on the provided date.
+- `handleSubmit(e)`: Handles form submissions, triggers validation, and age calculation.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+### Constants
 
-To see how you can add code snippets, see below:
+- `MAX_MONTH`: Constant representing the maximum month value (12).
+- `MAX_DAY`: Constant representing the maximum day value (31).
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+## CSS Styling
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+The styling is done using SCSS, with variables for color and layout configurations. The styles aim for a clean and responsive design.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+### Variables
 
-### Continued development
+- `$primary-color`: Main color used throughout the application.
+- `$error-color`: Color used for indicating validation errors.
+- `$light-gray`: Background color for a light gray theme.
+- `$dark-gray`: Darker gray used for labels and text.
+- `$black`: Black color for text.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+### Selectors
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+The CSS selectors are organized to style form inputs, buttons, and the overall layout. Media queries ensure responsive design for various screen sizes.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
