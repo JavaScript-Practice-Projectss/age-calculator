@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/AnoshaSohail/Age-Calculator.git)
-- Live Site URL: (https://anoshasohail.github.io/Age-Calculator/)
+- Live Site URL: ( https://javascript-practice-projectss.github.io/age-calculator/)
 
 ## JavaScript Code
 
